@@ -1,0 +1,18 @@
+[package]
+name = "bls12-377-cpp"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+cxx = "1.0"
+ark-ff = "0.3.0"
+ark-bls12-377 = "0.3.0"
+
+[build-dependencies]
+cxx-build = "1.0"
+
+[lib]
+name = "fr"
+crate-type = ["dylib"]
